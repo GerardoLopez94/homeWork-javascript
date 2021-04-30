@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeWork 02</title>
+</head>
+<body>
+    <script>
+        /* 2) Programa una función que te devuelva el 
+        texto recortado según el número de caracteres indicados, 
+        pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
+
+        //1) forma substring - no se utilizo substr por que se encuentra en desuso
+        function miFuncion(cadena="", pos=0){
+            //En javaScript null tiene a Fals
+            if(!cadena){
+                console.warn("No ingresaste ninguna cadena");
+            }else{
+                console.info(`La cadena hasta la posición ${pos} es: ${cadena.substring(0,pos)}`);
+            }
+        }
+        miFuncion();
+        miFuncion("Hola mundo", 4);
+
+    </script>
+</body>
+</html>
