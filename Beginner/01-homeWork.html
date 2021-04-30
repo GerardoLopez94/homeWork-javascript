@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HomeWork 01</title>
+</head>
+<body>
+   <script>
+      /* Programa una función que cuente el número de caracteres 
+         de una cadena de texto, pe. miFuncio("Hola Mundo") devolverá 10
+      */
+     function countCharacters (cadena = ""){
+        // En javascript null tiende hacer falso
+      if (!cadena){
+         console.warn("No ingresaste ninguna cadena");
+      }else{
+         // EL valtic te permite concatenar texto de una manera más facil
+         // Los String son objetos en javascript y tienen un metodo
+         // que devuelve la cantidad de caracteres
+         console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`);
+      }
+     }
+
+     // call function
+    // Llamamos a la función
+    
+    countCharacters();
+    countCharacters("Dificilicimo");
+   </script>   
+</body>
+</html>
