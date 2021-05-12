@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homeWork 03</title>
+</head>
+<body>
+    <script>
+        /* 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe.
+           miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
+        function miFuncion (cadena = "", character = undefined){
+            if (!cadena ){
+                console.warm("No ingresaste ninguna cadena");
+            }else if ( character === undefined){
+                console.wram("No ingresaste un caracter de referencia");
+            }else{
+                let arrayCharacter = cadena.split(character);
+                arrayCharacter.forEach(elemento => {console.log(elemento)}); 
+            }
+        }
+
+        const mFuncion2 = (cadena ="", character="") =>{
+            (!cadena)
+            ?console.warm("No ingresaste ninguna cadena")
+            :( character === undefined)
+                ?console.wram("No ingresaste un caracter de referencia")
+                :console.info(cadena.split(character))
+        }
+
+        console.log("Functio1");
+        miFuncion("hola mundo", " ");
+        console.log("function2");
+        mFuncion2("hola mundo", " ");
+    </script>
+</body>
+</html>

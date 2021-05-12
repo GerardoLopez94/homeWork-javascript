@@ -12,7 +12,7 @@
         pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
 
       //1) forma substring - no se utilizo substr por que se encuentra en desuso
-      function miFuncion(cadena = "", pos = 0) {
+      function miFuncion(cadena = "", pos = undefined) {
         //En javaScript null tiene a Fals
         if (!cadena) {
           console.warn("No ingresaste ninguna cadena");
@@ -23,7 +23,7 @@
         }
       }
 
-      const miFuncion2 = (cadena = "", pos = 0) => {
+      const miFuncion2 = (cadena = "", pos = undefined) => {
         !cadena
           ? console.warn("No ingresaste ninguna cadena")
           : console.info(
