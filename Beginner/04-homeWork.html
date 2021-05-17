@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 04</title>
+</head>
+<body>
+    <script>
+        /* Programa una funcion que repita un texto x veces, pe . miFuncion('hola mundo', 3) devolvera hola mundo hola mundo hola mundo*/
+        function miFuncion(cadena="", cantidad=undefined){
+            if(!cadena){
+                console.wram("No ingresaste ninguna cadena");
+            }else if(cantidad===undefined){
+                console.wram("No ingresaste la cantidad de repeticiones");
+            }else if(Math.sign(cantidad) ===-1){
+                console.wram("El número de veces no puede ser negativo");
+            }else{
+                let cadena_result = '';
+                for(let i = 1; i <=cantidad; i++  ){
+                    cadena_result = cadena_result + cadena + ' ';
+                }
+                console.log(cadena_result);
+            }
+        }
+
+        const mifuncion2 = (cadena="", cantidad=undefined) =>{
+           if (!cadena) {return console.wram("No ingresaste ninguna cadena")};
+           if (cantidad===undefined) {return console.wram("No ingresaste la cantidad de repeticiones")};
+           if (Math.sign(cantidad)===-1) {return console.wram("El número de veces no puede ser negativo")};
+            for(let i = 1; i <=cantidad; i++){
+                console.info(`${cadena},${i}`);
+            }
+                
+        }
+
+        //miFuncion('Hola Mundo', 3);
+        mifuncion2('Hola Mundo jeje', 3);
+    </script>
+</body>
+</html>
